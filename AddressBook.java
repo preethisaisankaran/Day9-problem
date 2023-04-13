@@ -2,7 +2,7 @@ package com.addressbook;
 import java.util.Scanner;
 public class AddressBook {
     public static void main(String[] args){
-
+        AddressBook addressBook = new AddressBook();
 
         System.out.println("Welcome to Address Book");
         ContactPerson obj1 = new ContactPerson();
@@ -89,7 +89,20 @@ public class AddressBook {
         }
 
         System.out.println("Changes " +obj1);
+        addressBook.delete();
 
+
+        }
+
+
+
+
+
+    public void delete(){
+        ContactPerson obj1 = new ContactPerson();
+        obj1=null;
+        System.out.println("Deleted contact " + obj1);
 
     }
+
 }
